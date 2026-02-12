@@ -6,7 +6,7 @@ from typing import Any, Dict, List
 import requests
 import streamlit as st
 
-BACKEND_URL = os.getenv("BACKEND_URL", "http://127.0.0.1:8000/respond")
+BACKEND_URL = os.getenv("BACKEND_URL", "https://ai-lead-response-assistant-1.onrender.com/respond")
 
 
 def send_to_backend(history: List[Dict[str, str]], message: str) -> Dict[str, Any]:
